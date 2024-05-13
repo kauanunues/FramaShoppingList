@@ -3,6 +3,7 @@ import { Text, View, SafeAreaView, ImageBackground, TextInput, TouchableOpacity 
 import { StatusBar } from 'expo-status-bar';
 import { Ionicons } from '@expo/vector-icons';
 import { styles } from './style';
+import ItemList from '../../components/ItemList';
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
         </View>
 
         {/* Lista de produtos*/}
+        <ItemList item = {"Café"}></ItemList>
+        <ItemList item = {"Leite"}></ItemList>
 
         <View style={styles.footer}>
           <View style={styles.inputContainer}>
