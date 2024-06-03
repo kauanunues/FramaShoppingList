@@ -1,11 +1,11 @@
 configuração da conta local do GIT:
-git config --global user.name mandinha2108
-git config --global user.email amafur8@gmail.com
+git config --global user.name kauanunues
+git config --global user.email marykakinho@gmail.com
 
-npx create-expo-app FramaShoppingList
+npx create-expo-app GalloShoplist
 
 entrar na pasta do projeto: 
-cd FramaShoppingList
+cd GalloShopList
 
 npm i
 

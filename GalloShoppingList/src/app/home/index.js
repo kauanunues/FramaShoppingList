@@ -20,7 +20,7 @@ export default function Home() {
  const saveItemToDevice = async  (items) => {
   try {
     const itemJson = JSON.stringify(items);
-    await AsyncStorage.setItem('FramaShoppingList', itemJson);
+    await AsyncStorage.setItem('GalloShopList', itemJson);
   } catch (error) {
     console.log(`Erro: ${error}`);
   }
@@ -28,7 +28,7 @@ export default function Home() {
 
  const getItemsFromDevice = async() => {
   try {
-    const items = await AsyncStorage.getItem('FramaShoppingList');
+    const items = await AsyncStorage.getItem('GalloShopList');
     if (items != null ) {
       setItems(JSON.parse(items));
     }

@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "FramaShoppingList",
-    "slug": "FramaShoppingList",
+    "name": "Galloshoplist",
+    "slug": "Galloshoplist",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "scheme" : "FramaShoppingList",
+    "scheme" : "Glloshoplist",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
