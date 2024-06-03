@@ -12,13 +12,13 @@ export default function Welcome() {
          />
       </View>
       <View style={styles.content}>
-         <Text style={styles.title}>Gallo Shopping List</Text>
-         <Text style={styles.text}>Monte sua lista de compras e não se esqueça mais o que precisa comprar ao sair de casa!! </Text>
+         <Text style={styles.title}>𝕲𝖆𝖑𝖑𝖔 𝕿𝖆𝖘𝖐 𝕷𝖎𝖘𝖙 𝕷𝖎𝖘𝖙</Text>
+         <Text style={styles.text}>Pra você não esqueçer suas Tarefa seu Bocó </Text>
         <Link style={styles.button} href={"/home"}>
-          <Text style={styles.buttonText}>Acessar</Text>
+          <Text style={styles.buttonText}>Lembrar</Text>
         </Link>
       </View>
-      <StatusBar style="light" backgroundColor='#000' />
+      <StatusBar style="light" backgroundColor='#000000' />
     </View>
   );
 }
@@ -26,7 +26,7 @@ export default function Welcome() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000000',
+    backgroundColor: '#a52a2a',
   },
   imagecontainer: {
     flex: 2,
@@ -54,12 +54,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   text:{
-    color: 'gray',
+    color: 'black',
     fontSize:16,
   },
   button:{
     position:'absolute',
-    backgroundColor:'#000',
+    backgroundColor:'#faebd7',
     borderRadius: 50,
     bottom:'15%',
     paddingVertical:15,
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     textAlign:'center',
   },
   buttonText:{
-    color:'#fff',
+    color:'#000000',
     fontSize: 22,
     fontWeight:'bold',
   },

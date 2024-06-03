@@ -39,7 +39,7 @@ export default function Home() {
  const addItem = () => {
    // console.log(textInput);
    if (textInput == '') {
-    Alert.alert('Ocorreu um problema :(', 'Por favor, informe o nome do produto!!');
+    Alert.alert('Ocorreu um problema :(', 'Por favor, informe sua Tarefa');
    } else {
     const newItem = {
       id: Math.random(),
@@ -74,7 +74,7 @@ export default function Home() {
  
  
  const removeItem = itemId => {
-    Alert.alert('Excluir Produto?', 'Confirma a exclusão deste produto?',
+    Alert.alert('Excluir Tarefa?', 'Confirma a exclusão desta Tarefa',
     [
       {
         text: 'Sim', onPress: () => {
@@ -90,7 +90,7 @@ export default function Home() {
  }
 
  const removeAll = () => {
-  Alert.alert('Limpar lista?', 'Confirma a exclusão de todos os produtos da sua lista?', 
+  Alert.alert('Limpar lista?', 'Confirma a exclusão de todas as Tarefas?', 
     [{
       text:'Sim',
       onPress:() => {setItems([])}
@@ -107,7 +107,7 @@ export default function Home() {
         style={{ flex: 1, justifyContent: 'flex-start' }}
       >
         <View style={styles.header}>
-          <Text style={styles.title}>Lista de Produtos</Text>
+          <Text style={styles.title}>Lista de Tarefas</Text>
           <Ionicons name="trash" size={32} color='#fff' onPress={removeAll} />
         </View>
 
@@ -131,7 +131,7 @@ export default function Home() {
               color= '#fff'
               fontSize={18}
               placeholderTextColor='#aeaeae'
-              placeholder='Digite o Nome do Produto...'
+              placeholder='Digite a Tarefa...'
               value={textInput}
               onChangeText={(text) => setTextInput(text)}
             />
